@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header,
+        .footer {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 2%;
+            max-width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            margin: 0;
+        }
+
+        .form-container form {
+            max-width: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        .form-container input,
+        .form-container button {
+            width: 100%;
+            margin-bottom: 1em;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-input {
+    position: relative;
+  }
+
+  .custom-input input[type="tel"] {
+    padding-left: 40px; /* Регулируйте отступ в зависимости от размеров вашей картинки */
+  }
+
+  .custom-input img {
+    position: absolute;
+    left: 10px; /* Регулируйте расположение картинки в зависимости от ваших предпочтений */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Регулируйте размер изображения в зависимости от ваших предпочтений */
+    height: auto;
+  }
+
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+
+    </style>
+</head>
+<body>
+
+    <img src="footer.png" alt="" class="header">
+   
+    <div class="form-container">
+        <form action="https://formspree.io/f/xgegvnjz" method="POST">
+            <input type="text" name="Alfateamsit@gmail.com" placeholder="ВВЕДІТЬ ІМ'Я" required>
+            <div class="custom-input">
+                <img src="free-icon-ukraine-3373317.png" class="ukraine" alt="Украина">
+                <input type="tel" inputmode="tel" name="Alfateamsit@gmail.com" maxlength="13" placeholder="(+380) ___-____" required>
+            </div>
+            <input type="email" name="Alfateamsit@gmail.com" placeholder="ВВЕДІТЬ ВАШ EMAIL" required>
+            <button type="submit">ЗАПИСАТИСЯ</button>
+        </form>
+        <p>Натискаючи цю кнопку, ви погоджуєтеся з умовами політики конфіденційності користувача</p>
+    </div>
+   <img src="header.png" alt="" class="footer">
+</body>
+</html>
+
